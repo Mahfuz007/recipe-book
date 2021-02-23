@@ -1,11 +1,10 @@
-import {EventEmitter, Injectable} from '@angular/core'
+import { Injectable} from '@angular/core'
 import { Ingredient } from '../Shared/ingredient.model';
 import { ShoppingService } from '../shopping-list/shopping.service';
 import {Recipe} from './recipes.model';
 
 @Injectable()
 export class RecipeService {
-    selectedItem = new EventEmitter<Recipe>();
     private recipes: Recipe[] = [
         new Recipe("Grilled Turkish-Style Chicken Wings Recipe",
         "An improved setup for skewers brings these grilled wings closer to the heat, while a marinade based",
