@@ -20,6 +20,8 @@ import { RecipeService } from './recipes/recipe.service';
 import { AuthComponent } from './auth/auth.component';
 import { LoadingComponent } from './Shared/loading/loading.component';
 import { AuthInterceptorService } from './auth/auth-interceptor.service';
+import { AlertComponent } from './Shared/alert/alert.component';
+import { PlaceholderDirective } from './Shared/placeHolder/placeHolder.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AuthInterceptorService } from './auth/auth-interceptor.service';
     RecipeStartComponent,
     RecipeEditComponent,
     AuthComponent,
-    LoadingComponent
+    LoadingComponent,
+    AlertComponent,
+    PlaceholderDirective
   ],
   imports: [
     BrowserModule,
