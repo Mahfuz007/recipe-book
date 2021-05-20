@@ -3,9 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import {HeaderComponent} from './header/header.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
+import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './Shared/dropdown.directive';
 import { ShoppingService } from './shopping-list/shopping.service';
 import { AppRoutingModule } from './appRouting.module';
@@ -17,13 +15,12 @@ import { AuthInterceptorService } from './auth/auth-interceptor.service';
 import { AlertComponent } from './Shared/alert/alert.component';
 import { PlaceholderDirective } from './Shared/placeHolder/placeHolder.directive';
 import { RecipeModule } from './recipes/recipe.module';
+import { ShoppingModule } from './shopping-list/shopping.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ShoppingListComponent,
-    ShoppingListEditComponent,
     DropdownDirective,
     AuthComponent,
     LoadingComponent,
@@ -36,7 +33,8 @@ import { RecipeModule } from './recipes/recipe.module';
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
-    RecipeModule
+    RecipeModule,
+    ShoppingModule
   ],
   providers: [ShoppingService, RecipeService,
   {
